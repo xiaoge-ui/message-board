@@ -1,0 +1,127 @@
+@charset "utf-8";
+body {
+  font: 14px/1.5em "微软雅黑";
+}
+div.container {
+  width: 1400px;
+  margin: 0px auto;
+}
+div.header {
+  font-style: italic;
+}
+div.header h3 {
+  font-weight: normal;
+  color: #09f;
+  cursor: pointer;
+}
+div.hide {
+  width: 1400px;
+  display: none;
+}
+div.hide div.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+div.hide div.show {
+  width: 400px;
+  height: 360px;
+  background-image: linear-gradient(to top, #fd08ac 0%, #0099dd 50%, #229955 100%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -180px;
+}
+div.hide div.show h3 {
+  margin: 0px auto;
+  background: #09f;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+}
+div.hide div.show textarea {
+  resize: none;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+div.hide div.show label {
+  margin-left: 10px;
+}
+div.hide div.show p {
+  text-align: right;
+  margin-right: 5px;
+}
+div.hide div.show p span {
+  color: #0099ff;
+  font-weight: bold;
+}
+div.hide div.show input[type="button"] {
+  border: none;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+  margin: 0px 50px 0px 100px;
+}
+div.hide div.show a#quit,
+div.hide div.show input[type="button"] {
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  line-height: 34px;
+  background-image: linear-gradient(to top, #ffff00 0%, #00ff00 100%);
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+div.hide div.show img {
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+div#caption h3 {
+  height: 48px;
+  background: #09f;
+  font-size: 36px;
+  font-style: italic;
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+}
+table {
+  width: 1400px;
+}
+table tr td {
+  padding: 10px 0px;
+  border-bottom: 2px solid #333333;
+}
+table tr td img {
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: -10px;
+}
+table tr td.content {
+  border-bottom: 4px solid #09f;
+}
+div#pages {
+  width: 200px;
+  margin: 15px auto 0px auto;
+}
+div#pages a {
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  background-image: linear-gradient(to bottom right, #ffff00 35%, #00ff00 100%);
+  line-height: 34px;
+  text-align: center;
+  color: #f00;
+  font-weight: bold;
+}

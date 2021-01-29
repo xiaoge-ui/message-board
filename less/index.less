@@ -1,0 +1,132 @@
+@charset "utf-8";
+@width:1400px;
+body{
+	font: 14px/1.5em "微软雅黑";
+}
+div.container{
+	width: @width;
+	margin: 0px auto;
+}
+div.header{
+	font-style: italic;
+	h3{
+		font-weight: normal;
+		color: #09f;
+		cursor: pointer;
+	}
+}
+div.hide{
+	width: @width;
+	display: none;
+	div.mask{
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: #000000;
+		opacity: 0.3;
+		filter: alpha(opacity=30);
+	}
+	div.show{
+		width: 400px;
+		height: 360px;
+		background-image: linear-gradient(to top,#fd08ac 0%,#0099dd 50%,#229955 100%);
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -200px;
+		margin-top: -180px;
+		h3{
+			margin: 0px auto;
+			background: #09f;
+			padding: 5px;
+			text-align: center;
+			color: #fff;
+			font-style: italic;
+			font-size: 20px;
+		}
+		textarea{
+			resize: none;
+			margin-left: 10px;
+			border-radius: 5px;
+		}
+		label{
+			margin-left: 10px;
+		}
+		p{
+			text-align: right;
+			margin-right: 5px;
+			span{
+				color: #0099ff;
+				font-weight: bold;
+			}
+		}
+		input[type="button"]{
+			border: none;
+			outline: none;
+			resize: none;
+			cursor: pointer;
+			margin:0px 50px 0px 100px;
+		}
+		a#quit,input[type="button"]{
+			display: inline-block;
+			width: 80px;
+			height: 34px;
+			line-height: 34px;
+			background-image: linear-gradient(to top,#ff0 0%,#0f0 100%);
+			border-radius: 5px;
+			text-align: center;
+			color: #fff;
+			font-size: 16px;
+		}
+		img{
+			border: 2px solid #CCCCCC;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+	}
+}
+div#caption{
+	h3{
+		height: 48px;
+		background: #09f;
+		font-size: 36px;
+		font-style: italic;
+		color: #fff;
+		line-height: 48px;
+		text-align: center;
+	}
+}
+table{
+	width: @width;
+	tr{
+		td{
+			padding: 10px 0px;
+			border-bottom: 2px solid #333333;
+			img{
+				width: 40px;
+				border-radius: 50%;
+				vertical-align: -10px;
+			}
+		}
+		td.content{
+			border-bottom: 4px solid #09f;
+		}
+		
+	}
+}
+div#pages{
+	width: 200px;
+	margin: 15px auto 0px auto;
+	a{
+		display: inline-block;
+		width: 70px;
+		height: 34px;
+		background-image: linear-gradient(to bottom right,#ff0 35%,#0f0 100%);
+		line-height: 34px;
+		text-align: center;
+		color: #f00;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>青春色彩留言板</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/axios.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>发表留言</h3>
+		</div>
+		<div class="hide">
+			<div class="mask"></div>
+			<div class="show">
+				<h3>发表留言</h3>
+				<label for="author">昵称：</label>
+				<input type="text" id="author" name="author" placeholder="请输入昵称">
+				<img src="img/face/1.gif" alt="" width="40" id="pic">
+				<select name="face" id="face">
+					
+				</select>
+				<br>
+				<label for="title">标题：</label>
+				<input type="text" id="title" name="title" placeholder="请输入标题"> <br>
+				<label for="content">内容：</label>
+				<textarea rows="10" cols="50" id="content" name="content" placeholder="请输入内容"></textarea>
+				<p>已输入<span>0</span>字</p>
+				<br>
+				<input type="button" id="btn" value="发表">
+				<a href="javascript:;" id="quit">取消</a>
+			</div>
+		</div>
+		<div id="caption">
+			<h3>青春色彩留言板</h3>
+		</div>
+		<table>
+			
+		</table>
+		<div id="pages">
+			<a href="javascript:;" id="on">上一页</a>
+			<a href="javascript:;" id="next">下一页</a>
+		</div>
+		<div class="footer">
+			<a href="admin/login.html">管理员登录</a>
+		</div>
+	</div>
+</body>
+</html>

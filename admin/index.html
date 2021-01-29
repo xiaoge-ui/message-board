@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>青春色彩留言板</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<style type="text/css">
+		span#adminName{
+			font-weight: bold;
+			color: #09f;
+		}
+	</style>
+	<script src="../js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/axios.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/index1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<p>欢迎管理员[<span id="adminName"></span>]进入主界面</p>
+			<a href="login.html" id="exit">注销</a>
+		</div>
+		<div class="hide">
+			<div class="mask"></div>
+			<div class="show">
+				<h3>回复留言</h3>
+				<label for="replay1">内容：</label>
+				<textarea rows="10" cols="50" id="replay1" name="replay1" placeholder="请输入内容"></textarea>
+				<p>已输入<span>0</span>字</p>
+				<br>
+				<input type="button" id="btn" value="发表">
+				<a href="javascript:;" id="quit">取消</a>
+			</div>
+		</div>
+		<div id="caption">
+			<h3>青春色彩留言板</h3>
+		</div>
+		<table>
+			
+		</table>
+		<div id="pages">
+			<a href="javascript:;" id="on">上一页</a>
+			<a href="javascript:;" id="next">下一页</a>
+		</div>
+	</div>
+</body>
+</html>
